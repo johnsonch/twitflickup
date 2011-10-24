@@ -8,6 +8,9 @@ gem 'rails', '3.1.1'
 gem 'mysql2'
 
 
+gem 'flickraw'
+gem "twitter"
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -30,9 +33,14 @@ end
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem "cucumber-rails", :group => [:development, :test]
-gem "capybara", :group => [:development, :test]
+group :test do
+  gem 'turn', '< 0.8.3'
+  gem 'database_cleaner'
+  gem "cucumber-rails"
+  gem "capybara"
+  gem "rspec-rails", ">= 2.0.1"
+end
+
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "jquery-rails"
-gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
