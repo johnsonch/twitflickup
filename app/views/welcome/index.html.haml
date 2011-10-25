@@ -1,0 +1,12 @@
+%h1 Twitflickup
+
+= image_tag @mashup[:image].url_m
+
+%div
+  = image_tag @mashup[:tweet][:user][:profile_image_url], :style => "float:left; padding-right:5px;"
+  %p
+    = @mashup[:tweet].text
+    %br 
+    @
+    = @mashup[:tweet][:user][:screen_name]
+
