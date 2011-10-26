@@ -1,9 +1,10 @@
 %h1 Twitflickup
 
-= image_tag @mashup[:image].url_m
+%div#flickr-image
+  = image_tag @mashup[:image].url_m, :alt => @mashup[:image].title
 
-%div
-  = image_tag @mashup[:tweet][:user][:profile_image_url], :style => "float:left; padding-right:5px;"
+%div#tweet
+  = image_tag( @mashup[:tweet][:user][:profile_image_url], :alt => "Profile picture for #{@mashup[:tweet][:user][:screen_name]}") 
   %p
     = @mashup[:tweet].text
     %br 
