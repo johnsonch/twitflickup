@@ -39,6 +39,7 @@ group :test do
   gem "cucumber-rails"
   gem "capybara"
   gem "rspec-rails", ">= 2.0.1"
+  gem "sauce"
 end
 
 gem "haml", ">= 3.0.0"
