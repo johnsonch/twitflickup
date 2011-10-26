@@ -7,5 +7,5 @@ Then /^I should see a tweet with the word "([^"]*)" in it$/ do |search|
 end
 
 Then /^I should seen an image from Flickr$/ do
-    pending # express the regexp above with the code you wish you had
+  page.has_selector?('#flickr-image img')
 end
