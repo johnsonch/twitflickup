@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'rails', '5.2.4.3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -14,8 +14,8 @@ gem "twitter"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.1.4'
-  gem 'coffee-rails', '~> 3.1.1'
+  gem 'sass-rails', '~> 5.0.5'
+  gem 'coffee-rails', '~> 4.2.2'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -38,9 +38,9 @@ group :test do
   gem 'database_cleaner'
   gem "cucumber-rails"
   gem "capybara"
-  gem "rspec-rails", ">= 2.0.1"
+  gem "rspec-rails", ">= 2.8.0"
 end
 
 gem "haml", ">= 3.0.0"
-gem "haml-rails"
-gem "jquery-rails"
+gem "haml-rails", ">= 0.5.3"
+gem "jquery-rails", ">= 4.0.1"
