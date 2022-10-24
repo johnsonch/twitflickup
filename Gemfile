@@ -9,12 +9,12 @@ gem 'mysql2'
 
 
 gem 'flickraw'
-gem "twitter"
+gem "twitter", ">= 4.0.0"
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.1.4'
+  gem 'sass-rails', '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
 end
@@ -38,7 +38,7 @@ group :test do
   gem 'database_cleaner'
   gem "cucumber-rails"
   gem "capybara"
-  gem "rspec-rails", ">= 2.0.1"
+  gem "rspec-rails", ">= 2.7.0"
 end
 
 gem "haml", ">= 3.0.0"
